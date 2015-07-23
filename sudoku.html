@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+	<title>Sudoku</title>
+	<style type="text/css">
+
+	</style>
+	<script type="text/javascript">
+		function setTable(){
+			// document.getElementById("set_table").innerHTML="";
+			table_range=document.getElementById("set_table");
+			mytable=document.createElement("table");
+			for(var i=0;i<9;i++){
+				myrow=document.createElement("tr");
+				mytable.appendChild(myrow);
+				for(var j=0;j<9;j++){
+					mycol=document.createElement("td");
+					myrow.appendChild(mycol);
+				}
+			}
+		}
+	</script>
+
+</head>
+<body onload="setTable()">
+	<header>
+		<nav>
+			<a href="#">about</a>
+			<a href="#">contact</a>
+		</nav>
+	</header>
+	<h1>Sudoku</h1>
+	<div id="info_container">
+		<div>Sudoku is a game...</div>
+	</div>	
+	<div id="set_table">
+	</div>
+</body>
